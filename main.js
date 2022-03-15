@@ -6,7 +6,15 @@
 // Úkol 1 - Založ nové pole se seznamem jmen (alespoň 5)
 // Vypiš jeho obsah do stránky - JavaScript spojí pole automaticky do řetězce
 
+let listOfNames = [
+    'Dana',
+    'Jitka',
+    'Zdenka',
+    'Jana',
+    'Klára',
+    'Lucie']
 
+vypisText(listOfNames)
 
 
 
@@ -14,14 +22,14 @@
 // Nezapomeň, že pole se čísluje od 0
 
 
-
+vypisText(listOfNames[2])
 
 
 
 // Úkol 3 - Kolik jmen je v poli?
 // Pole má vlastnost pole.length
 
-
+vypisText(listOfNames.length)
 
 
 
@@ -33,7 +41,10 @@
 // 2. Marie
 // atd.
 
-
+listOfNames.forEach(function(ele, idx){
+	vypisText(idx + '. ' + ele)
+    
+});
 
 
 
@@ -43,19 +54,16 @@
 // Doplněný seznam jmen vypiš (jednoduše jako v příkladu 1)
 
 
-
-
+listOfNames.push('Kubík')
+vypisText(listOfNames)
 
 // Úkol 6 - odeber z pole první a poslední jméno a vypiš
 // obě jména a pak i výsledné pole
 // pole.shift()
 // pole.pop()
 
-
-
-
-
-
+vypisText(listOfNames.shift())
+vypisText(listOfNames.pop())
 
 
 
